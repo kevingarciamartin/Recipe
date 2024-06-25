@@ -11,6 +11,10 @@ body {
     background-color: hsl(23, 53%, 92%);
     display: grid;
     grid-template-columns: var(--_inline-padding) auto [main-start] min(25vw, calc(var(--_max-text-width) / 2)) [main-middle] min(25vw, calc(var(--_max-text-width) / 2)) [main-end] auto var(--_inline-padding);
+
+    @media (min-width: 1200px) {
+        --_inline-padding: 7rem;
+    }
 }
 
 img {
@@ -68,6 +72,10 @@ main {
 
     section, img {
         margin-block: 1rem;
+    }
+
+    img {
+        border-radius: 3px;
     }
 
     h2 {
